@@ -90,6 +90,29 @@ footer {
   color: rgb(190, 190, 190);
 }
 
+.check,
+.remove {
+  font-size: 1.4rem;
+}
+
+.check:hover,
+.check:focus {
+  color: hsl(103, 56%, 56%);
+}
+
+.check:active {
+  color: hsl(103, 44%, 40%);
+}
+
+.remove:hover,
+.remove:focus {
+  color: hsl(0, 50%, 53%);
+}
+
+.remove:active {
+  color: hsl(0, 44%, 42%);
+}
+
 #todo-form {
 }
 

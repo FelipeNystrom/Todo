@@ -37,7 +37,7 @@ const addTodoToList = todo => {
     ).innerHTML = `<span>${data.todo.toUpperCase()}</span>`;
 
     li.appendChild(removeFromList).innerHTML =
-      '<i class="fas fa-times-circle"></i> ';
+      '<i class="fas fa-check-circle check"></i> ';
 
     li.insertAdjacentHTML('beforeend', todoId);
 
@@ -65,7 +65,8 @@ const addTodoToDone = (movedTodo, id) => {
     let todoId = `<input type="hidden" value="${data.id}">`;
 
     doneTodoList.appendChild(li).innerHTML = `<span>${movedTodo}</span>`;
-    li.appendChild(span).innerHTML = '<i class="fas fa-times-circle"></i> ';
+    li.appendChild(span).innerHTML =
+      '<i class="fas fa-times-circle remove"></i> ';
     li.insertAdjacentHTML('beforeend', todoId);
   }
 };
