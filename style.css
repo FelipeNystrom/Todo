@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: hsl(313, 24%, 48%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+button {
+  border: 0;
+  border-radius: 10%;
+  padding: 0.4rem;
+
+  color: rgba(255, 255, 255, 0.7);
+  background-color: hsl(0, 47%, 39%);
+  border-bottom: 2px solid hsl(0, 47%, 33%);
+}
+
+button,
+button:hover,
+button:active,
+button:focus {
+  outline: none;
+}
+
+button:hover,
+button:focus {
+  background-color: hsl(0, 42%, 44%);
+}
+
+button:active {
+  margin: 0.2rem;
+  border-bottom: 0rem;
+}
+
+footer {
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title-section {
+  margin-top: 1rem;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.section-header {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.todo,
+.done-todo {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid rgba(219, 219, 219, 0.5);
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  margin: 0.4rem 0;
+}
+
+.id {
+  display: none;
+}
+
+.done-todo {
+  text-decoration: line-through;
+  color: rgb(190, 190, 190);
+}
+
+#todo-form {
+}
+
+#todo-form input {
+  outline: none;
+  border: 0rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0 0.2rem;
+}
+
+#todo-submit {
+  border: 0;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  background-color: hsl(96, 42%, 40%);
+  border-bottom: 0.2rem solid hsl(96, 43%, 34%);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#todo-submit:hover,
+#todo-submit:focus {
+  outline: none;
+  background-color: hsl(96, 47%, 54%);
+}
+
+#todo-submit:active {
+  display: inline-block;
+  margin: 0.2rem;
+  outline: none;
+  background-color: hsl(96, 41%, 35%);
+  border-bottom: 0rem;
+}
+
+#input,
+#list,
+#done {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#list,
+#done {
+  flex: 1;
+}
+
+#todo-header {
+  padding: 0.4rem;
+}
+
+#doneSectionHeader {
+  display: none;
+}
+
+#todo-list,
+#done-todo-list {
+  width: 65%;
+  list-style: none;
+}
+
+#copyright {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+
+#listFlex {
+  justify-content: center;
+}
+
+#emptyTodoList,
+#emptyDoneTodoList {
+  text-transform: capitalize;
+  display: none;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo</title>
+</head>
+
+<body>
+
+    <main>
+        <section id="input">
+            <h1 id="todo-header" class="section-header">todo app</h1>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="What todo?">
+                <button type="submit" id="todo-submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="list">
+            <div id="listFlex" class="section-title-section">
+                <h1 class="section-header">list of todos</h1>
+                <button id="emptyTodoList">empty list</button>
+            </div>
+
+            <ul id="todo-list"></ul>
+        </section>
+
+        <section id="done">
+            <div id="doneSection" class="section-title-section">
+                <h1 id="doneSectionHeader" class="section-header">list of done todos</h1>
+                <button id="emptyDoneTodoList">empty list</button>
+            </div>
+            <ul id="done-todo-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <div id="copyright">&copy
+            <span id="year"></span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
