@@ -100,10 +100,6 @@ footer {
   color: hsl(103, 56%, 56%);
 }
 
-.check:active {
-  color: hsl(103, 44%, 40%);
-}
-
 .remove:hover,
 .remove:focus {
   color: hsl(0, 50%, 53%);
@@ -111,9 +107,6 @@ footer {
 
 .remove:active {
   color: hsl(0, 44%, 42%);
-}
-
-#todo-form {
 }
 
 #todo-form input {
